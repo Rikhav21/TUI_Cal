@@ -1,13 +1,14 @@
-build-system]
+[build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "haxmas_day_9_YOUR_USERNAME"
+name = "haxmas-day-9-rmardia"
 version = "0.0.1"
-dependencies = [
-    "textual",
-]
+dependencies = ["textual"]
 
 [project.scripts]
-advent-calendar = "haxmas_day_9_YOUR_USERNAME.main:main"
+advent-calender = "haxmas_day_9_rmardia.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["haxmas_day_9_rmardia"]
